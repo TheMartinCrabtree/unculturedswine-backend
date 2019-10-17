@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wealth: 1
+  assets: MyString
+  surname: MyString
+  popularity: 1
+  status: 1
+  effects: MyString
+
+two:
+  wealth: 1
+  assets: MyString
+  surname: MyString
+  popularity: 1
+  status: 1
+  effects: MyString

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  traits: MyString
+  age: 1
+  firstname: MyString
+  lastname: MyString
+  familyhead: false
+  spouse: false
+  child: false
+  male: false
+  sibling: false
+  dead: false
+
+two:
+  traits: MyString
+  age: 1
+  firstname: MyString
+  lastname: MyString
+  familyhead: false
+  spouse: false
+  child: false
+  male: false
+  sibling: false
+  dead: false
