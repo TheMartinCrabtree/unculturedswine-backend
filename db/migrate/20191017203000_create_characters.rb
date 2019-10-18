@@ -12,6 +12,8 @@ class CreateCharacters < ActiveRecord::Migration[5.2]
       t.boolean :sibling
       t.boolean :dead
 
+      t.references :game, foreign_key: true
+
       t.timestamps
     end
   end
