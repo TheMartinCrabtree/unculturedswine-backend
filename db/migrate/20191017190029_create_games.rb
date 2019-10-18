@@ -8,6 +8,8 @@ class CreateGames < ActiveRecord::Migration[5.2]
       t.integer :status
       t.text :effects
 
+      t.references :user, foreign_key: true
+
       t.timestamps
     end
   end
