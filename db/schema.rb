@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_17_203000) do
+ActiveRecord::Schema.define(version: 2019_10_18_124313) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,8 +45,19 @@ ActiveRecord::Schema.define(version: 2019_10_17_203000) do
     t.integer "popularity"
     t.integer "status"
     t.text "effects"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_games_on_user_id"
+  end
+
+  create_table "joingameevents", force: :cascade do |t|
+    t.bigint "game_id"
+    t.bigint "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_joingameevents_on_event_id"
+    t.index ["game_id"], name: "index_joingameevents_on_game_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -57,4 +68,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_203000) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "games", "users"
+  add_foreign_key "joingameevents", "events"
+  add_foreign_key "joingameevents", "games"
 end
