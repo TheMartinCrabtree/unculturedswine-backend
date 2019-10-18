@@ -26,8 +26,10 @@ ActiveRecord::Schema.define(version: 2019_10_18_124313) do
     t.boolean "male"
     t.boolean "sibling"
     t.boolean "dead"
+    t.bigint "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_characters_on_game_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -68,6 +70,7 @@ ActiveRecord::Schema.define(version: 2019_10_18_124313) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "characters", "games"
   add_foreign_key "games", "users"
   add_foreign_key "joingameevents", "events"
   add_foreign_key "joingameevents", "games"

@@ -1,5 +1,5 @@
 class GameSerializer < ActiveModel::Serializer
-  attributes :id, :wealth, :assets, :surname, :popularity, :status, :effects
+  attributes :id, :wealth, :assets, :surname, :popularity, :status, :effects, :user_id, :event_ids, :character_ids
 
   belongs_to :user
   has_many :characters
