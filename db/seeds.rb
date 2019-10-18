@@ -23,5 +23,5 @@ character3 = Character.create( game_id: game1.id, age: 30, firstname: "Megan", l
 character4 = Character.create( game_id: game1.id, age: 20, firstname: "Peachy", lastname: "Pech", male: false, familyhead: false, dead: true)
 
 # GAME EVENT ASSOCIATION
-game1.joingameevent.create(event_id: event2.id)
-game1.joingameevent..create(event_id: event1.id)
+game1.joingameevents.create(event_id: 2)
+game1.joingameevents.create(event_id: 1)
