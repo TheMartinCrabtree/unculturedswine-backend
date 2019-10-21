@@ -9,6 +9,12 @@
 # EVENTS
 event1 = Event.create(title: "Buy a plot of land", description: "Buy a plot of land for 5 gold. ", effect: "This is a json object with stats/modifiers" )
 event2 = Event.create(title: "Potential spouse.... ", description: "Name: Royetta, Age: 50, Trait: Beefy, Bonus: 50 gold pieces ", effect: "This is a json object with stats/modifiers" )
+event3 = Event.create(title: "Test event 3 ", description: "stuff happens 3 ", effect: "This is a json object with stats/modifiers" )
+event4 = Event.create(title: "Test event 4", description: "stuff happens 4", effect: "This is a json object with stats/modifiers" )
+event5 = Event.create(title: "Test event 5", description: "stuff happens 5 ", effect: "This is a json object with stats/modifiers" )
+event6 = Event.create(title: "Test event 6 ", description: "stuff happens 6 ", effect: "This is a json object with stats/modifiers" )
+event7 = Event.create(title: "Test event 7 ", description: "stuff happens 7 ", effect: "This is a json object with stats/modifiers" )
+event8 = Event.create(title: "Test event 8 ", description: "stuff happens 8", effect: "This is a json object with stats/modifiers" )
 
 
 user1 = User.create(name: "Grahm", username: "spicygross")
