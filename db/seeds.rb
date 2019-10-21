@@ -14,7 +14,7 @@ event4 = Event.create(title: "Test event 4", description: "stuff happens 4", eff
 event5 = Event.create(title: "Test event 5", description: "stuff happens 5 ", effect: "This is a json object with stats/modifiers" )
 event6 = Event.create(title: "Test event 6 ", description: "stuff happens 6 ", effect: "This is a json object with stats/modifiers" )
 event7 = Event.create(title: "Test event 7 ", description: "stuff happens 7 ", effect: "This is a json object with stats/modifiers" )
-event8 = Event.create(title: "Test event 8 ", description: "stuff happens 8", effect: "This is a json object with stats/modifiers" )
+event8 = Event.create(title: "Test event 8 ", description: "stuff happens 8", effect: "[{level: 1}, {wealth: 5}]" )
 
 
 user1 = User.create(name: "Grahm", username: "spicygross")
