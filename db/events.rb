@@ -1,0 +1,62 @@
+events = [
+    {
+        title: "A Traveling Merchant",
+        description: "A traveling merchant stoped by your village with his wares. Before setting up shop, however, he realized he forgot to turn his hearth off and ran back home! He left some of his things behind and the village splits the goods. You will gain 10 gold.",
+        effect: "{ level: 1, wealth: 10 }"
+    },
+    {
+        title: "Strays Need Love Too",
+        description: "You decided to take in a stray dog this year. Because of the extra mouth to feed, you lose some wealth, however, you gain reputation in the village as being a kind person.",
+        effect: "{ level: 1, wealth: -5, popularity: 10}"
+        },
+    {
+        title: "Oops",
+        description: "You steal from the town's wishing well and someone saw you do it.",
+        effect: "{ level: 1, wealth: 25, popularity: -25 }"
+    },
+    {
+        title: "Woo!",
+        description: "You steal from the town's wishing well and you got away with it.",
+        effect: "{ level: 1, wealth: 25 }"
+    },
+    {
+        title: "A Bad Season",
+        description: "Crops did not perform well this year. You lose wealth and the entire village has been bickering, so everyone's popularity drops.",
+        effect: "{ level: 1, wealth: -10, popularity: -10 }"
+    },
+    {
+        title: "Diggin For Gold",
+        description: "You caught the town's mayor picking his nose. Out of embarassment, he shoves some cois your way and asks you sheepishly to keep it between the two of you.",
+        effect: "{ level: 2, wealth: 2}"
+    },
+    {
+        title: "Hero Of the Decade",
+        description: "You were out for a walk when you heard a child crying for help. You rush towards the sound and find a child drowning. Luckily, you saved the child. The King catch's wind of your heroic feat and you have been promoted in class.",
+        effect: "{ level: 2, status: 100 }"
+    },
+    {
+        title: "An Enemy?",
+        description: "Someone left a dead bird on your doorsteps. Your neighbors see and begin to gossip.",
+        effect: "{ level: 2, popularity: -10 }"
+    },
+    {
+        title: "A friend?",
+        description: "You find a basket of bread upon your doorstep. Because of this, you save some coin.",
+        effect: "{ level: 2, wealth: 5 }"
+    },
+    {
+        title: "Extra Work",
+        description: "You found some extra work on your neighbor's farm. He shared the profits with your family and you've made a friend.",
+        effect: "{ level: 2, wealth: 10, popularity: 10}"
+    },
+    {
+        title: "Unpopular Decision",
+        description: "You made a really unpopular decision and your people hate you for it..",
+        effect: "{ level: 3, popularity: -25 }"
+    },
+    {
+        title: "Oops",
+        description: "You steal from the town's wishing well and someone saw you do it.",
+        effect: "{ level: 1, wealth: 25, popularity: -25 }"
+    },
+]
