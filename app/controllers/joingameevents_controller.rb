@@ -48,6 +48,6 @@ class JoingameeventsController < ApplicationController
     # Only allow a trusted parameter "white list" through.
     # params.fetch(:joingameevent, {}).permit(:user_id, :event_id)
     def joingameevent_params
-      params.require(:joingameevent).permit(:user_id, :event_id)
+      params.fetch(:joingameevent, {}).permit(:game_id, :event_id)
     end
 end
